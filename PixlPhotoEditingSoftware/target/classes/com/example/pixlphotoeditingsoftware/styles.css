@@ -1,0 +1,80 @@
+/************************************************** Loading Form *************************************************/
+/*Loader  ProgressBar CSS*/
+.progressBar .bar {
+    -fx-background-color: linear-gradient(to right, #5460f9, #12b3eb);
+}
+
+/********************************************** Log In Form ******************************************************/
+/*Log In Grid Pane CSS*/
+.logInBackground {
+    -fx-background-color: linear-gradient(to bottom right, #297be6, #aa0ec2);
+}
+
+/* Log In Button CSS*/
+.logInButton{
+    -fx-background-color: linear-gradient(to top right, #0cab1b, #361ff0);
+    -fx-background-radius: 20;
+}
+.logInButton:hover{
+     -fx-transition: -fx-background-color 1s;
+     -fx-background-color: linear-gradient(to top right, #1f8028, #281c8a);
+}
+.logInButton:pressed{
+    -fx-background-color: black;
+}
+
+/*LogIn TextField And PasswordField CSS*/
+.logInText {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+    -fx-border-color: linear-gradient(to right, rgb(255, 94, 247), rgb(2, 245, 255));
+    -fx-border-width: 0 0 3 0;
+    -fx-padding: 0;
+}
+.logInText:focused, .logInText:pressed{
+    -fx-border-color: red;
+}
+
+/*LogInForm Sign Up CreateAccount Button (createAccount*/
+.createAccount{
+    -fx-background-color: linear-gradient(to top right, #0cab1b, #361ff0);
+    -fx-background-radius: 20;
+}
+.createAccount:hover{
+     -fx-transition: -fx-background-color 1s;
+     -fx-background-color: linear-gradient(to top right, #1f8028, #281c8a);
+}
+.createAccount:pressed{
+    -fx-background-color: black;
+}
+
+/********************************************** Sign Up Form ******************************************************/
+/*SignUp Grid Pane CSS*/
+.signUpBackground {
+    -fx-background-color: linear-gradient(to bottom right, #2e2aa3, #89253e);
+}
+
+/* SignUp Button CSS*/
+.signUpButton{
+    -fx-background-color: linear-gradient(to right, #6b21ad, #248db3);
+    -fx-background-radius: 20;
+}
+.signUpButton:hover{
+     -fx-transition: -fx-background-color 1s;
+     -fx-background-color: linear-gradient(to top right, #470d7a, #196c8a);
+}
+.signUpButton:pressed{
+    -fx-background-color: black;
+}
+
+/*SignUp TextField And PasswordField CSS*/
+.signUpText {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+    -fx-border-color: linear-gradient(to right, rgb(255, 94, 247), rgb(2, 245, 255));
+    -fx-border-width: 0 0 3 0;
+    -fx-padding: 0;
+}
+.signUpText:focused, .signUpText:pressed {
+    -fx-border-color: red;
+}

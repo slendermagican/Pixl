@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="signUpBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="850.0" prefHeight="440.0" prefWidth="850.0" styleClass="signUpBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixlphotoeditingsoftware.SignUpController">
+    <center>
+        <GridPane alignment="CENTER" maxHeight="600.0" maxWidth="1250.0" style="-fx-background-color: yellow;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="527.1999755859374" prefWidth="574.3999969482422" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            </rowConstraints>
+            <BorderPane.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+            </BorderPane.margin>
+            <children>
+                <VBox fx:id="signUpPane" alignment="CENTER" prefHeight="400.0" prefWidth="585.0" spacing="10.0" style="-fx-background-color: white;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="80.0" prefWidth="465.0" text="Create an account" textAlignment="CENTER" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Berlin Sans FB Bold" size="45.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Label>
+                        <TextField fx:id="EmailField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" promptText="Email" styleClass="signUpText" stylesheets="@styles.css">
+                            <font>
+                                <Font name="Berlin Sans FB" size="20.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                        </TextField>
+                  <Label fx:id="lblEmail" prefHeight="18.0" prefWidth="350.0" text="Label">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                        <PasswordField fx:id="passWordField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" promptText="Password" styleClass="signUpText" stylesheets="@styles.css">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                        </PasswordField>
+                  <Label fx:id="lblPass" minHeight="18.0" minWidth="350.0" prefHeight="18.0" prefWidth="350.0" text="Label">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                        <Button fx:id="signUpButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RegisterButton" prefHeight="60.0" prefWidth="155.0" styleClass="signUpButton" stylesheets="@styles.css" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Berlin Sans FB Bold" size="30.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                  <Label fx:id="backToLogIn" alignment="CENTER" maxHeight="30.0" maxWidth="250.0" minHeight="20.0" minWidth="250.0" onMouseClicked="#openLogInForm" prefHeight="30.0" prefWidth="250.0" text="Back to LogIn →" textAlignment="CENTER" textFill="#0fe2ff">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <padding>
+                        <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                    </padding></VBox>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </GridPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="850.0" prefHeight="440.0" prefWidth="850.0" styleClass="logInBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixlphotoeditingsoftware.LogInController">
+   <center>
+      <GridPane alignment="CENTER" maxHeight="600.0" maxWidth="1400.0" style="-fx-background-color: yellow;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="227.20000305175782" prefWidth="227.20000305175782" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="527.1999755859374" prefWidth="574.3999969482422" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox fx:id="rightLogInImage" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: white;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label alignment="CENTER" cache="true" contentDisplay="CENTER" maxHeight="130.0" maxWidth="275.0" minHeight="130.0" minWidth="225.0" prefHeight="130.0" prefWidth="225.0" stylesheets="@styles.css" text="Don' t have an account?" textAlignment="CENTER" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="35.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#openNewWindow" prefHeight="60.0" prefWidth="155.0" styleClass="createAccount" stylesheets="@styles.css" text="Sign Up" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="logInPane" alignment="CENTER" prefHeight="400.0" prefWidth="585.0" spacing="10.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="335.0" text="Log In to Pixl" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="50.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <TextField fx:id="EmailField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" promptText="Email" styleClass="logInText" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <Label fx:id="lblEmail" prefHeight="6.0" prefWidth="348.0" text="Label" wrapText="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <PasswordField fx:id="passWordField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" promptText="Password" styleClass="logInText" stylesheets="@styles.css">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </PasswordField>
+                  <Label fx:id="lblPassword" prefHeight="0.0" prefWidth="346.0" text="Label" wrapText="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Button fx:id="logInButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openMainForm" prefHeight="60.0" prefWidth="155.0" styleClass="logInButton" stylesheets="@styles.css" text="Log In" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+               </padding></VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </GridPane>
+   </center>
+</BorderPane>
